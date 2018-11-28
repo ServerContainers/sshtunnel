@@ -6,6 +6,8 @@ Look at the Docker Compose file.
 
 Can have multiple users with thier own custom configurations
 
+It is roughly based on this informations: https://askubuntu.com/questions/48129/how-to-create-a-restricted-ssh-user-for-port-forwarding
+
 ## Environment Variables
 
 - `USER_<username>`
