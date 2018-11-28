@@ -26,3 +26,4 @@ _all values are able to use multiple values_
 ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -N -L 8080:www.bbc.com:80 bob@127.0.0.1 -p 2222
 ```
 
+_if you want the command to recover server disconnects/downtimes etc. just encapsulate it whithin `while true; do command_from_above; sleep 1; done`_
