@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  sshtunnel:
+    build: .
+    image: servercontainers/sshtunnel
+    restart: always
+    environment:
+      USER_bob: 'ssh-rsa AAAAB3...your.ssh.public.key.here... bob@macbook'
+      PERMIT_OPEN_bob: 'www.bbc.com:80'
+    ports:
+      - '2222:22'
