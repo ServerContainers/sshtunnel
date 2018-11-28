@@ -7,6 +7,6 @@ services:
     restart: always
     environment:
       USER_bob: 'ssh-rsa AAAAB3...your.ssh.public.key.here... bob@macbook'
-      PERMIT_OPEN_bob: 'www.bbc.com:80'
+      PERMIT_OPEN_bob_bbchttp: 'www.bbc.com:80'
     ports:
       - '2222:22'
