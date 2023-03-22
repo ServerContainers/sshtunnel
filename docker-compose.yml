@@ -3,7 +3,7 @@ version: '3.3'
 services:
   sshtunnel:
     build: .
-    image: servercontainers/sshtunnel
+    image: ghcr.io/servercontainers/sshtunnel
     restart: always
     environment:
       USER_bob: 'ssh-rsa AAAAB3...your.ssh.public.key.here... bob@macbook'

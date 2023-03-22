@@ -1,5 +1,23 @@
 #!/bin/sh
 
+cat <<EOF
+################################################################################
+
+Welcome to the ghcr.io/servercontainers/sshtunnel
+
+################################################################################
+
+You'll find this container sourcecode here:
+
+    https://github.com/ServerContainers/sshtunnel
+
+The container repository will be updated regularly.
+
+################################################################################
+
+
+EOF
+
 if [ ! -e '/initialized' ]; then
 touch '/initialized'
 
@@ -46,5 +64,9 @@ done
 
 fi
 
-echo ">> starting sshd"
-exec /usr/sbin/sshd -D
+##
+# CMD
+##
+echo ">> CMD: exec docker CMD"
+echo "$@"
+exec "$@"
