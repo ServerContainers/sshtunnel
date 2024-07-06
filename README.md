@@ -21,6 +21,9 @@ To build a `latest` tag run `./build.sh release`
 
 ## Changelogs
 
+* 2024-07-06
+    * update to debian `bookworm`
+    * fixed build
 * 2023-03-20
     * github action to build container
     * implemented ghcr.io as new registry

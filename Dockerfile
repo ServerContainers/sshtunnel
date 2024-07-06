@@ -1,9 +1,9 @@
-FROM debian:stretch
+FROM debian:bookworm
 
-ENV DEBIAN_FRONTEND noninteractive                     
+ENV DEBIAN_FRONTEND noninteractive
                                                                        
-RUN apt-get -q -y update \                           
- && apt-get -q -y install --no-install-recommends openssh-server \                                  
+RUN apt-get -q -y update \
+ && apt-get -q -y install --no-install-recommends openssh-server \
  && apt-get -q -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  \
