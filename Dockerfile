@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM debian:trixie
 
 ENV DEBIAN_FRONTEND noninteractive
                                                                        
@@ -7,7 +7,7 @@ RUN apt-get -q -y update \
  && apt-get -q -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  \
- && mkdir /run/sshd
+ && mkdir -p /run/sshd
 
 EXPOSE 22
 

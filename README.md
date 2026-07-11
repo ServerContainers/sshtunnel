@@ -1,4 +1,4 @@
-# SSH Tunnel Container on debian:stretch (ghcr.io/servercontainers/sshtunnel) [x86 + arm]
+# SSH Tunnel Container on debian:trixie (ghcr.io/servercontainers/sshtunnel) [x86 + arm]
 
 it gives you a hardened ssh configuration where you only allow tcp forwarding to specific ports.
 
@@ -13,7 +13,7 @@ It is roughly based on this informations: https://askubuntu.com/questions/48129/
 You can specify `DOCKER_REGISTRY` environment variable (for example `my.registry.tld`)
 and use the build script to build the main container and it's variants for _x86_64, arm64 and arm_
 
-You'll find all images tagged like `d11.2-s1.2.1-2.1` which means `d<debian version>-s<openssh-server version (with some esacped chars)>`.
+You'll find all images tagged like `d13-s1.2.1-2.1` which means `d<debian version>-s<openssh-server version (with some esacped chars)>`.
 This way you can pin your installation/configuration to a certian version. or easily roll back if you experience any problems
 (don't forget to open a issue in that case ;D).
 
@@ -21,6 +21,8 @@ To build a `latest` tag run `./build.sh release`
 
 ## Changelogs
 
+* 2026-07-11
+    * update to debian `trixie`
 * 2024-07-06
     * update to debian `bookworm`
     * fixed build
